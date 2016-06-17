@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09DC3E7CF3874FAF4B788BD6 /* Pods_Fintalk1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD114C13461FE23A6566B119 /* Pods_Fintalk1.framework */; };
 		3CF8E82C1D10E45E0022F542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8E82B1D10E45E0022F542 /* AppDelegate.swift */; };
 		3CF8E82E1D10E45E0022F542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8E82D1D10E45E0022F542 /* ViewController.swift */; };
 		3CF8E8311D10E45E0022F542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8E82F1D10E45E0022F542 /* Main.storyboard */; };
 		3CF8E8341D10E45E0022F542 /* Fintalk1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8E8321D10E45E0022F542 /* Fintalk1.xcdatamodeld */; };
 		3CF8E8361D10E45E0022F542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8E8351D10E45E0022F542 /* Assets.xcassets */; };
 		3CF8E8391D10E45E0022F542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8E8371D10E45E0022F542 /* LaunchScreen.storyboard */; };
+		3CF8E8411D10EA480022F542 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8E8401D10EA470022F542 /* UserService.swift */; };
+		3CF8E8431D10EA810022F542 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8E8421D10EA810022F542 /* UserApi.swift */; };
+		3CF8E8511D10F6710022F542 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8E84F1D10F6710022F542 /* User+CoreDataProperties.swift */; };
+		3CF8E8521D10F6710022F542 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8E8501D10F6710022F542 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		3CF8E8351D10E45E0022F542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CF8E8381D10E45E0022F542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CF8E83A1D10E45E0022F542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF8E8401D10EA470022F542 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		3CF8E8421D10EA810022F542 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		3CF8E84F1D10F6710022F542 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3CF8E8501D10F6710022F542 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5DD22CE511E68D6A24AFB3AB /* Pods-Fintalk1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fintalk1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fintalk1/Pods-Fintalk1.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4EF4E653BC18523D4F6E4B /* Pods-Fintalk1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fintalk1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fintalk1/Pods-Fintalk1.release.xcconfig"; sourceTree = "<group>"; };
+		AD114C13461FE23A6566B119 /* Pods_Fintalk1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fintalk1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DC3E7CF3874FAF4B788BD6 /* Pods_Fintalk1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				3CF8E82A1D10E45E0022F542 /* Fintalk1 */,
 				3CF8E8291D10E45E0022F542 /* Products */,
+				CD08FF889540EF5622ED4937 /* Pods */,
+				ABD61BDDC42F998793417582 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,92 @@
 		3CF8E82A1D10E45E0022F542 /* Fintalk1 */ = {
 			isa = PBXGroup;
 			children = (
+				3CF8E84E1D10F0960022F542 /* Services */,
+				3CF8E84D1D10F0860022F542 /* Storyboard */,
+				3CF8E84C1D10F0770022F542 /* Controllers */,
+				3CF8E84B1D10F0620022F542 /* Apis */,
+				3CF8E8481D10F0440022F542 /* Repo */,
 				3CF8E82B1D10E45E0022F542 /* AppDelegate.swift */,
-				3CF8E82D1D10E45E0022F542 /* ViewController.swift */,
-				3CF8E82F1D10E45E0022F542 /* Main.storyboard */,
 				3CF8E8351D10E45E0022F542 /* Assets.xcassets */,
-				3CF8E8371D10E45E0022F542 /* LaunchScreen.storyboard */,
 				3CF8E83A1D10E45E0022F542 /* Info.plist */,
-				3CF8E8321D10E45E0022F542 /* Fintalk1.xcdatamodeld */,
 			);
 			path = Fintalk1;
+			sourceTree = "<group>";
+		};
+		3CF8E8481D10F0440022F542 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8E8321D10E45E0022F542 /* Fintalk1.xcdatamodeld */,
+				3CF8E84A1D10F04F0022F542 /* Generated */,
+				3CF8E8491D10F04A0022F542 /* Models */,
+			);
+			name = Repo;
+			sourceTree = "<group>";
+		};
+		3CF8E8491D10F04A0022F542 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8E8501D10F6710022F542 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3CF8E84A1D10F04F0022F542 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8E84F1D10F6710022F542 /* User+CoreDataProperties.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+		3CF8E84B1D10F0620022F542 /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8E8421D10EA810022F542 /* UserApi.swift */,
+			);
+			name = Apis;
+			sourceTree = "<group>";
+		};
+		3CF8E84C1D10F0770022F542 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8E82D1D10E45E0022F542 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3CF8E84D1D10F0860022F542 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8E8371D10E45E0022F542 /* LaunchScreen.storyboard */,
+				3CF8E82F1D10E45E0022F542 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		3CF8E84E1D10F0960022F542 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8E8401D10EA470022F542 /* UserService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		ABD61BDDC42F998793417582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD114C13461FE23A6566B119 /* Pods_Fintalk1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD08FF889540EF5622ED4937 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DD22CE511E68D6A24AFB3AB /* Pods-Fintalk1.debug.xcconfig */,
+				7A4EF4E653BC18523D4F6E4B /* Pods-Fintalk1.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CF8E83D1D10E45E0022F542 /* Build configuration list for PBXNativeTarget "Fintalk1" */;
 			buildPhases = (
+				01A2502AE356D1FB6D8EA6F6 /* 📦 Check Pods Manifest.lock */,
 				3CF8E8241D10E45E0022F542 /* Sources */,
 				3CF8E8251D10E45E0022F542 /* Frameworks */,
 				3CF8E8261D10E45E0022F542 /* Resources */,
+				5CC7C777F035A537835EBB16 /* 📦 Embed Pods Frameworks */,
+				56C9CAE267F943C711D12A5C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,12 +228,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01A2502AE356D1FB6D8EA6F6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56C9CAE267F943C711D12A5C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fintalk1/Pods-Fintalk1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CC7C777F035A537835EBB16 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fintalk1/Pods-Fintalk1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CF8E8241D10E45E0022F542 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF8E8411D10EA480022F542 /* UserService.swift in Sources */,
+				3CF8E8431D10EA810022F542 /* UserApi.swift in Sources */,
+				3CF8E8511D10F6710022F542 /* User+CoreDataProperties.swift in Sources */,
 				3CF8E82E1D10E45E0022F542 /* ViewController.swift in Sources */,
+				3CF8E8521D10F6710022F542 /* User.swift in Sources */,
 				3CF8E8341D10E45E0022F542 /* Fintalk1.xcdatamodeld in Sources */,
 				3CF8E82C1D10E45E0022F542 /* AppDelegate.swift in Sources */,
 			);
@@ -251,6 +398,7 @@
 		};
 		3CF8E83E1D10E45E0022F542 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD22CE511E68D6A24AFB3AB /* Pods-Fintalk1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fintalk1/Info.plist;
@@ -262,6 +410,7 @@
 		};
 		3CF8E83F1D10E45E0022F542 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4EF4E653BC18523D4F6E4B /* Pods-Fintalk1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fintalk1/Info.plist;
@@ -290,6 +439,7 @@
 				3CF8E83F1D10E45E0022F542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
