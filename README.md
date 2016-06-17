@@ -1,5 +1,5 @@
 # FinTalk-Swift
-"Intro to Swift" Source Code and PowerPoint presented at ParivedaSolutions 6/17/16. This repository contains 3 basic components.
+"Intro to Swift" Source Code and PowerPoint presented at ParivedaSolutions 6/16/16. This repository contains 3 basic components.
 
 ## 1. Source Code
 This project relies on Cocoapods as it's dependency manager and will need to be installed on your machine in order to run. You can find setup instructions here (https://cocoapods.org/).
